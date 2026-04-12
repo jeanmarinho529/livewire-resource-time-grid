@@ -1,7 +1,8 @@
 {{-- Injected variables: $resource, $hoursAndSlots, $interval --}}
 <div
     class="-ml-px"
-    style="min-width: 12rem;"
+    {{-- style="min-width: 12rem;" --}}
+    style="min-width: auto; max-width: 12-rem;"
     id="{{ $resource['id'] }}"
 >
 
