@@ -1,6 +1,6 @@
 <?php
 
-namespace Asantibanez\LivewireResourceTimeGrid;
+namespace Jeanmarinho529\LivewireResourceTimeGrid;
 
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
@@ -8,7 +8,7 @@ use Livewire\Component;
 
 /**
  * Class LivewireResourceTimeGrid
- * @package Asantibanez\LivewireResourceTimeGrid
+ * @package Jeanmarinho529\LivewireResourceTimeGrid
  * @property string $gridView
  * @property string $hoursColumnView
  * @property string $hourView
