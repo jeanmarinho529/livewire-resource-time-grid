@@ -4,7 +4,7 @@
     wire:click.stop="onEventClick('{{ $event['id'] }}')">
 
     <div class="{{ $styles['eventTitle'] }}">
-        {{ $event['starts_at']->format('h:i A') }} - {{ $event['ends_at']->format('h:i A') }}
+        {{ $event['starts_at']->format('H:i') }} - {{ $event['ends_at']->format('H:i') }}
     </div>
 
     <div class="{{ $styles['eventBody'] }}">
