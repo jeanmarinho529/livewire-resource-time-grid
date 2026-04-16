@@ -1,6 +1,6 @@
 {{-- Injected variables: $resource, $eventsInHourSlot --}}
 <div
-    class="{{ $styles['resourceColumnHourSlot'] }}"
+    class="{{ $styles['resourceColumnHourSlot'] }} {{ !empty($resource['is_today']) ? 'bg-teal-100' : '' }}"
     style="height: {{ $hourHeightInRems / (60/$interval) }}rem;"
     id="{{ $_instance->getId() }}-{{ $resource['id'] }}-{{ $hour }}-{{$slot}}"
 

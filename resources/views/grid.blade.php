@@ -12,11 +12,13 @@
                 <div class="grid grid-cols-1 md:grid-cols-6">
 
                     @foreach ($resources as $resource)
-                        @include($resourceColumnView, [
-                            'hoursAndSlots' => $hoursAndSlots,
-                            'resource' => $resource,
-                            'interval' => $interval,
-                        ])
+                        <div class="col-span-1 {{ !empty($resource['is_today']) ? 'block' : 'hidden md:block' }}">
+                            @include($resourceColumnView, [
+                                'hoursAndSlots' => $hoursAndSlots,
+                                'resource' => $resource,
+                                'interval' => $interval,
+                            ])
+                        </div>
                     @endforeach
                 </div>
             </div>

@@ -7,7 +7,7 @@
 >
 
     <div
-        class="border"
+        class="border {{ !empty($resource['is_today']) ? 'bg-teal-100' : '' }}"
         style="height: {{ $resourceColumnHeaderHeightInRems }}rem;"
     >
         @include($resourceColumnHeaderView, [
