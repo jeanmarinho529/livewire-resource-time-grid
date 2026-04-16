@@ -12,8 +12,8 @@
                 <div class="grid grid-cols-1 md:grid-cols-6">
 
                     @foreach ($resources as $resource)
-                        <div class="col-span-1 {{ !empty($resource['is_today']) ? 'block' : 'hidden md:block' }}">
-                            @include($resourceColumnView, [
+                        <div class="col-span-1 {{ count($resources) == 1 and !empty($resource['is_today']) ? 'block' : 'hidden md:block' }}">
+                                @include($resourceColumnView, [
                                 'hoursAndSlots' => $hoursAndSlots,
                                 'resource' => $resource,
                                 'interval' => $interval,
